@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacMan Exercise</title>
+  </head>
+  <style>
+    body{
+        background: #212931;
+        padding: 0px;
+        margin: 0px;
+     
+    }
+    .container {
+        border: #fff solid 20px;
+        width: 800px;
+        height: 200px;
+        padding: 80px;
+        margin: 150px;
+        position: relative;
+        left: 25%;
+                
+    }
+    .container img {
+      position: absolute;
+      
+    }
+
+    h1{
+      font-family: "Source Sans Pro", Helvetica, sans-serif;
+		  font-weight: 900;
+      font-size: 3em;
+		  line-height: 1.5;
+		  letter-spacing: 0.075em;
+		  text-transform: uppercase;
+		  margin: 30 30 1rem 0;
+      color: #fff;
+      text-align: center;
+	    }
+    
+    .button_container{
+      position: relative;
+      text-align: center;
+    }
+
+    button{
+      -moz-appearance: none;
+		  -webkit-appearance: none;
+		  -ms-appearance: none;
+		  appearance: none;
+		  -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	    -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		  -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+      background-color: transparent;
+      color: #fff; 
+      border: #fff solid 1px;
+      border-radius: 50px;
+      padding: 0 3rem;
+      margin: 10px;
+      text-align: center;
+      text-transform: uppercase; 
+      font-family: "Source Sans Pro", Helvetica, sans-serif;
+		  font-size: 0.8rem;
+		  font-weight: 900;
+		  letter-spacing: 0.09em;
+      height: 4rem;
+		  line-height: 3rem;
+      display: inline-block;
+    }
+    button:hover {
+			border: #ff914d solid 1px;
+      box-shadow: inset 0 0 0 1px #ff914d;
+			color: #ff914d !important;
+		}
+
+  </style>
+  <body>
+    <div>
+      <h1>PacMan Has Been Caught!</h1>
+    </div>
+
+    <div class="container">
+        <img
+            id="PacMan"
+            src="Pacman 1.png"
+            width="200"
+            onclick="Run()"
+            style="position: relative"
+        />
+    </div><br>
+    <div class="button_container">
+
+      <button class="action_GitHub" type="submit" onclick="">GitHub</button>
+      <button class="action_Home" type="submit" onclick="">Home</button>
+      
+    </div>
+
+    
+    <script src="./pacman.js"></script>
+  </body>
+</html>
